@@ -1,0 +1,13 @@
+Connection String
+
+mysql://bi7wxgzg69znyo8u:x39n1qyhzhlzpg6f@pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/h5nmklcoou07synd
+
+
+You can use your connection information to connect manually through a client such as HeidiSQL to administer your database.
+
+Property	Value
+Host	    pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	
+Username	bi7wxgzg69znyo8u	
+Password	x39n1qyhzhlzpg6f	
+Port	    3306	
+Database	h5nmklcoou07synd
