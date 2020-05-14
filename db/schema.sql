@@ -1,12 +1,13 @@
-DROP DATABASE IF EXISTS h5nmklcoou07synd;
-CREATE DATABASE h5nmklcoou07synd;
-USE h5nmklcoou07synd;
+DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
 
 CREATE TABLE burgers (
   id INT AUTO_INCREMENT,
-  name VARCHAR(30),
+  burger VARCHAR(30),
   primary key(id)
 );
 
-
+INSERT INTO BURGERS (burger)
+value ("Big smoke");
