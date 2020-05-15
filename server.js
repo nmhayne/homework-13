@@ -36,7 +36,7 @@ const connection = mysql.createConnection({
 connection.connect(function(err) {
   if (err) throw err;
   // run the start function after the connection is made to prompt the user
-
+  
 });
 
 
@@ -57,7 +57,21 @@ app.post("/", function(req, res) {
   });
 });
 
-
+- function selectAll() {
+  connection.query("SELECT * FROM burgers;", function(err, data) {
+    if (err) throw err;
+  });
+}
+- function insertOne() {
+  connection.query("INSERT INTO burgers (burger) VALUES (?)", [req.body.burgerInput], function(err, result) {
+    if (err) throw err;  
+  });
+}
+- function updateOne() {
+  connection.query("UPDATE burgers (burger) VALUES (?)", [req.body.burgerInput], function(err, result) {
+    if (err) throw err;  
+  });
+}
 
 
 app.listen(PORT, function() {
